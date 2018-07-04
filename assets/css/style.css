@@ -76,8 +76,9 @@ nav.black ul{
 
 h1{
   text-align: center;
-  margin:0;
+  padding-bottom:150px;
   font-size: 60px;
+  font-weight:bold;
   text-transform: uppercase;
   height:45px;
 }
@@ -99,7 +100,7 @@ section{
 }
 hr{
   display: block;
-  border:0.5px solid grey;
+  border:px solid black;
   width:90%;
 }
 .price{
@@ -109,9 +110,19 @@ hr{
 #quantity{
   width:70px;
 }
-#woodPool, #accessories, #maintain, #spa{
+#accessories, .accessories, #maintain, .maintain, #spa, .spa{
   display:none;
 }
 .productTitle{
   font-weight:bold;
+}
+.title{
+  padding-top:10px;
+  margin-bottom:50px;
+  font-weight:bold;
+  font-size:30px;
+  border:1px solid black;
+  height:50px;
+  background-color: #0000FF;
+  color:white;;
 }

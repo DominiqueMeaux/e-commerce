@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
@@ -22,10 +23,10 @@
 
             <div id="menu">
               <ul id="categorie">
-                <li><a href="#">Piscine</a></li>
-                <li><a href="#">Spa</a></li>
-                <li><a href="#">Accessoire</a></li>
-                <li><a href="#">Entretien</a></li>
+                <li><a href="#" id="hptxt1">Piscine</a></li>
+                <li><a href="#" id="hptxt2">Spa</a></li>
+                <li><a href="#" id="hptxt3">Accessoire</a></li>
+                <li><a href="#" id="hptxt4">Entretien</a></li>
               </ul>
             </div>
           </nav>
@@ -38,8 +39,8 @@
       <h1 id="maintain">Entretien</h1>
       <h1 id="spa">Spa/Jacuzzi</h1>
       <div class="row">
-        <div class="col-xl-3 col-lg-3 col-md-3" id="woodPool">
-                <h2>Piscine Bois</h2>
+        <div class="woodPool col-xl-3 col-lg-3 col-md-3">
+                <h2 class="title">Piscine Bois</h2>
                 <div id="productspot">
                   <h3 class="productTitle">Piscine hors-sol bois Pistoche PROSWELL, L.2.26 x l.2.26 x H.0.67 m</h3>
                   <p>R001</p>
@@ -141,7 +142,7 @@
                   <hr>
                 </div>
               </div>
-        <div  class="col-xl-3 col-lg-3 col-md-3" id="woodPool">
+        <div class="woodPool col-xl-3 col-lg-3 col-md-3">
                 <h2  class="title">Piscine Tubulaire</h2>
                 <div id="productspot">
                   <h3 class="productTitle">Piscine hors-sol autoportante tubulaire Métal frame INTEX x H.0.76 m</h3>
@@ -244,7 +245,7 @@
                   <hr>
                 </div>
               </div>
-        <div  class="col-xl-3 col-lg-3 col-md-3" id="woodPool">
+        <div class="woodPool col-xl-3 col-lg-3 col-md-3">
                 <h2 class="title">Piscine Gonflable</h2>
                 <div id="productspot">
                   <h3 class="productTitle">Piscine hors-sol tubulaire Prism INTEX x H.1 m</h3>
@@ -307,7 +308,7 @@
                   <hr>
                 </div>
               </div>
-        <div  class="col-xl-3 col-lg-3 col-md-3" id="woodPool">
+        <div class="woodPool col-xl-3 col-lg-3 col-md-3">
                 <h2 class="title">Piscine Acier</h2>
                 <div id="productspot">
                   <h3 class="productTitle">Piscine hors-sol acier Osmose luxe TRIGANO, L.6.4 x l.3.9 x H.1.32 m</h3>
@@ -399,7 +400,7 @@
                   <hr>
                 </div>
               </div>
-        <div  class="col-xl-12 col-lg-12 col-md-12" id="accessories">
+        <div class="accessories col-xl-12 col-lg-12 col-md-12">
           <div class="row">
             <div id="productspot" class="col-xl-3 col-lg-3 col-md-3">
               <h3 class="productTitle">Tapis de sol uni AQUALUX, L.500 x l.460 cm</h3>
@@ -497,7 +498,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-12 col-lg-12 col-md-12" id="maintain">
+        <div class="maintain col-xl-12 col-lg-12 col-md-12">
           <div class="row">
             <div id="productspot" class="col-xl-3 col-lg-3 col-md-3">
               <h3 class="productTitle">Epuisette de fond pour piscine NATERIAL</h3>
@@ -647,7 +648,7 @@
                   </div>
                 </div>
         </div>
-        <div class="col-xl-12 col-lg-12 col-md-12" id="spa">
+        <div class="spa col-xl-12 col-lg-12 col-md-12">
           <div class="row">
             <div id="productspot" class="col-xl-3 col-lg-3 col-md-3">
               <h3 class="productTitle">SPAtec 700 blanc</h3>
@@ -739,5 +740,47 @@
 <script src="assets/jq/jquery-3.2.1.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+  $('#hptxt1').click(function(){
+    $('#spa').hide();
+    $('.spa').hide();
+    $('#accessories').hide();
+    $('.accessories').hide();
+    $('#maintain').hide();
+    $('.maintain').hide();
+    $('.woodPool').show();
+    $('#woodPool').show();
+  });
+  $('#hptxt2').click(function(){
+    $('#spa').show();
+    $('.spa').show();
+    $('#accessories').hide();
+    $('.accessories').hide();
+    $('#maintain').hide();
+    $('.maintain').hide();
+    $('.woodPool').hide();
+    $('#woodPool').hide();
+  });
+  $('#hptxt3').click(function(){
+    $('#spa').hide();
+    $('.spa').hide();
+    $('#accessories').show();
+    $('.accessories').show();
+    $('#maintain').hide();
+    $('.maintain').hide();
+    $('.woodPool').hide();
+    $('#woodPool').hide();
+  });
+  $('#hptxt4').click(function(){
+    $('#spa').hide();
+    $('.spa').hide();
+    $('#accessories').hide();
+    $('.accessories').hide();
+    $('#maintain').show();
+    $('.maintain').show();
+    $('.woodPool').hide();
+    $('#woodPool').hide();
+  });
+</script>
   </body>
 </html>
