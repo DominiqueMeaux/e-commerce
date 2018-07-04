@@ -34,7 +34,7 @@ hr{
 #quantity{
   width:70px;
 }
-#woodPool{
+#woodPool,#accessories{
   display:none;
 }
 .productTitle{
