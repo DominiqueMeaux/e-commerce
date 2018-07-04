@@ -109,7 +109,7 @@ hr{
 #quantity{
   width:70px;
 }
-#woodPool,#accessories{
+#woodPool, #accessories, #maintain, #spa{
   display:none;
 }
 .productTitle{
