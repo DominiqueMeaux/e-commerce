@@ -62,6 +62,7 @@ $(function(){
         $('#A_total').html('Total : ' + A_subtotal.toFixed(2) + ' €');
       }else{
         $('.A_product').remove();
+        $('#A_total').html('Total : 0 €');
       }
     });
     //Ajout de la section footer du modal
