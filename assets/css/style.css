@@ -12,9 +12,10 @@ header{
   height:auto;
 
 }
+
 .logo{
   font-family: 'Shrikhand', cursive;
-  color:#00e6b8;
+  color:#323284;
   font-size:70px;
 }
 .color{
@@ -26,18 +27,21 @@ header{
 }
 nav{
   width: 100%;
-  background: #00316b;
+  height: auto;
+  background: linear-gradient(to right , #fff 10%,#000066 90%);
   margin-bottom: 10px;
 }
 ul{
   width: 80%;
   margin: 0 auto;
   padding: 0;
+
 }
 ul li{
   list-style: none;
   display: inline-block;
   padding: 20px;
+
 }
 ul li:hover{
   background: #e91e63;
@@ -46,8 +50,12 @@ ul li a{
   color: #fff;
   text-decoration: none;
 }
+
+
 /*navbar*/
-nav ul{
+
+
+/*nav ul{
   background: rgba(0,0,0,0);
   overflow: hidden;
   color:#fff;
@@ -58,7 +66,7 @@ nav ul{
 }
 nav.black ul{
   background: #000;
-}
+}*/
   nav ul li{
     display: inline-block;
     padding:20px;
