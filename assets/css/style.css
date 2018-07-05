@@ -12,7 +12,6 @@ header{
   height:auto;
 
 }
-
 .logo{
   font-family: 'Shrikhand', cursive;
   color:#323284;
@@ -149,7 +148,4 @@ hr{
   background-color:#00316B;
   color:white;
   text-align: left;
-}
-.pool:hover > .infobulle{
-
 }
