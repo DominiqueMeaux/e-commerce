@@ -3,25 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--Google font-->
   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet" />
+  <!-- ICONE DE PAGE -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css.map" />
   <title>Pool&Co</title>
 </head>
 <body>
+ <a id="top"></a>
   <div class="container-fluid">
     <header>
       <nav class="navbar  navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#" >
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <div class="logo hidden-xs">
+            <img id="imgGoutte" src="assets/img/goutte.png" title="image goutte d eau" />
+            Pool & Co<span class="color">.</span>
+          </div>
+        </a>
+          <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" > <i class="fas fa-align-justify"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="logo">
-              <img id="imgGoutte" src="assets/img/goutte.png" title="image goutte d eau" />
-              Pool & Co<span class="color">.</span></div></a>
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="#" id="hptxt1">Piscine<span class="sr-only">(current)</span></a>
@@ -357,6 +363,7 @@
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
           </section>
           <script src="assets/jq/jquery-3.2.1.js"></script>
           <script src="assets/js/script.js"></script>
@@ -411,3 +418,97 @@
           </script>
         </body>
         </html>
+=======
+          </div>
+        </div>
+      </div>
+    </section>
+    <i id="hbutton" class="far fa-arrow-alt-circle-up"></i>
+<footer id="footer">
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <h5 class="color1">FAQ :</h5>
+      <ul>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Réalisation</a></li>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Partage d'idées</a></li>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Programme</a></li>
+      </ul>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <h5 class="color1">Aide :</h5>
+      <ul>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Contactez-nous</a></li>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Le SAV</a></li>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Fiche de sécurité</a></li>
+      </ul>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <h5 class="color1"> Vous inspirez :</h5>
+      <ul>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Nos dépliants</a></li>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Les conseils</a></li>
+        <li><a href="file:///home/kevin/Documents/E-commerce/e-commerce/index.html">Proposition</a></li>
+      </ul>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <select class="tdrl custom-select relative" name="Langues">
+        <optgroup label="Selectionnez votre langue">
+          <option value="Francais">francais</option>
+          <option value="Anglais">anglais</option>
+          <option value="Allemand">allemand</option>
+        </optgroup>
+      </select>
+    </div>
+</footer>
+    <script src="assets/jq/jquery-3.2.1.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      var acc = document.getElementsByClassName("accordion2");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      };
+      $('#hptxt1').click(function(){
+        $('#accessories').hide();
+        $('.accessories').hide();
+        $('.woodPool').show();
+        $('#woodPool').show();
+        $('#accordionPool').show();
+      });
+      $('#hptxt2').click(function(){
+        $('.woodPool').hide();
+        $('#woodPool').hide();
+        $('#accordionPool').hide();
+        $('#accessories').show();
+        $('.accessories').show();
+      });
+  $(function(){
+    $('#hbutton').click(function(){
+        $("html, body").animate({scrollTop: 0},"slow");
+      });
+    });
+    </script>
+</body>
+</html>
+>>>>>>> 60b8a59a76c549290d9d885c923ff340e71d46e9
