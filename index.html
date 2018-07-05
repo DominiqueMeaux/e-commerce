@@ -29,11 +29,34 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#" id="hptxt2">Accessoire</a>
                 </li>
+                <li>
+                  <a href="#A_basket" data-toggle="modal" id="A_showBasket">
+                    <i class="fas fa-shopping-cart fa-2x text-light"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
         </header>
+        <!--Fenêtre modale-->
+        <div class="modal fade" id="A_basket">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header bg-info">
+                <h2 class="modal-title">Mon panier</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="A_contentBasket"></div>
+              </div>
+              <div class="modal-footer">
+                <div id="A_totalSection"></div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
+    <!--Partie Fabien-->
     <section class="col-xl-12 col-lg-12 col-md-12">
       <h1 id="woodPool">Piscine-Hors-Sol</h1>
       <h1 id="accessories">Accessoires</h1>
