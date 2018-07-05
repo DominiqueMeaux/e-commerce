@@ -110,7 +110,7 @@ hr{
 #quantity{
   width:70px;
 }
-#accessories, .accessories, #maintain, .maintain, #spa, .spa{
+#accessories, .accessories{
   display:none;
 }
 .productTitle{
@@ -125,4 +125,25 @@ hr{
   height:50px;
   background-color: #0000FF;
   color:white;;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.accordion {
+    background-color: #0000FF;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
 }
