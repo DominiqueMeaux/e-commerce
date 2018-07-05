@@ -7,14 +7,8 @@ body{
   background-repeat: no-repeat;
   background-size: 100%;
 }
-<<<<<<< HEAD
-footer{
-  background-color: #00316b;
-  padding: 60px;
-=======
 p{
   font-family: 'Shrikhand', cursive;
->>>>>>> b72e9c1722d84e3c46395b1c5fc1a2afa7a8a879
 }
 li{
   list-style: none;
@@ -155,13 +149,9 @@ hr{
     overflow: hidden;
 }
 #footer{
-  background-color: white;
-  height:150px;
+  background-color: #00316b;
   display: flex;
   justify-content: center;
-  padding:20px;
-  position:absolute;
-  bottom:0px;
 }
 .accordion2 {
     background-color: #eee;
