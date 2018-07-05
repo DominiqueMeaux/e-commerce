@@ -15,7 +15,9 @@ header{
   height:auto;
 
 }
-
+.navbar-toggler{
+  background-color: black;
+}
 .logo{
   font-family: 'Shrikhand', cursive;
   color:#323284;
