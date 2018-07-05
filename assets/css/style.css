@@ -3,9 +3,11 @@ margin-left: 47%;
 margin-bottom: 10px;
 padding: 10px;
 font-size: 70px;
+color:blue;
+}
 }
 h5{
-color: #ff0000;
+color: white;
 }
 p{
   font-family: 'Shrikhand', cursive;
@@ -31,6 +33,10 @@ header{
   font-family: 'Shrikhand', cursive;
   color:#323284;
   font-size:70px;
+}
+.color1{
+  color: #fbfbfb;
+  text-decoration: underline;
 }
 .color{
   color:#ff0000;
