@@ -1,3 +1,9 @@
+body{
+  background-image: url(https://curiosaetc.files.wordpress.com/2016/05/piscine.gif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 li{
   list-style: none;
 }
