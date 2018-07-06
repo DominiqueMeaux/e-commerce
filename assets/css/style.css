@@ -1,104 +1,10 @@
-#hbutton{
-margin-left: 47%;
-margin-bottom: 10px;
-padding: 10px;
-font-size: 70px;
-color:blue;
-}
-}
-h5{
-color: white;
-}
-p{
-  font-family: 'Shrikhand', cursive;
-}
+/*selecteur d ordre general*/
 body{
   background-image: url(https://curiosaetc.files.wordpress.com/2016/05/piscine.gif);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-p{
-  font-family: 'Shrikhand', cursive;
-}
-li{
-  list-style: none;
-}
-header{
-  width: 100%;
-  height:auto;
-}
-.navbar-toggler{
-  background-color: black;
-}
-.logo{
-  font-family: 'Shrikhand', cursive;
-  color:#323284;
-  font-size:70px;
-}
-.color1{
-  color: #fbfbfb;
-  text-decoration: underline;
-}
-.color{
-  color:#ff0000;
-}
-#imgGoutte{
-  width: 100px;
-  height: 100px;
-}
-nav{
-  width: 100%;
-  height: auto;
-  background: linear-gradient(to right , #fff 10%,#000066 90%);
-  margin-bottom: 10px;
-}
-ul{
-  width: 80%;
-  margin: 0 auto;
-  padding: 0;
-
-}
-ul li{
-  list-style: none;
-  display: inline-block;
-  padding: 20px;
-
-}
-ul li:hover{
-  background: #e91e63;
-}
-ul li a{
-  color: #fff;
-  text-decoration: none;
-}
-
-
-/*navbar*/
-
-
-/*nav ul{
-  background: rgba(0,0,0,0);
-
-  overflow: hidden;
-  color:#fff;
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  transition: 2s;
-}
-nav.black ul{
-  background: #000;
-}*/
-  nav ul li{
-    display: inline-block;
-    padding:20px;
-  }
-  nav ul li a{
-    text-decoration: none;
-    color:#fff;
-    font-size: 20px;
-  }
 h1{
   padding-top: 100px;
   text-align: center;
@@ -108,6 +14,65 @@ h1{
   text-transform: uppercase;
   height:45px;
 }
+h5{
+  color: white;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+li{
+  list-style: none;
+}
+header{
+  width: 100%;
+  height:auto;
+}
+/*navbar*/
+
+.logo{
+  font-family: 'Shrikhand', cursive;
+  color:#323284;
+  font-size:70px;
+  display:block;
+}
+@media screen and ( max-width:767px){
+  .logo{display:none;}
+}
+
+.color{
+  color:#ff0000;
+}
+#imgGoutte{
+  width: 100px;
+  height: 100px;
+}
+nav{
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to right , #fff 10%,#000066 90%);
+  margin-bottom: 10px;
+}
+ul{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+ul li{
+  display: inline-block;
+  padding: 20px;
+
+}
+ul li:hover{
+  background: #99ccff;
+}
+  nav ul li a{
+    color:#fff;
+    font-size: 25px;
+  }
+  button i{
+    color: white;
+  }
+  /*SECTION*/
 section{
   margin-top:100px;
   text-transform: uppercase;
@@ -123,6 +88,9 @@ section{
   max-width: 250px;
   height: 250px;
   width: 250px;
+}
+.add{
+  border-radius: 5px;
 }
 hr{
   display: block;
@@ -152,7 +120,7 @@ hr{
   background-color: #0000FF;
   color:white;;
 }
-.active, .accordion:hover, .accordion2:hover {
+ .active,.accordion:hover,.accordion2:hover {
     background-color: #ccc;
 }
 .accordion {
@@ -173,11 +141,6 @@ hr{
     background-color: white;
     overflow: hidden;
 }
-#footer{
-  background-color: #00316b;
-  display: flex;
-  justify-content: center;
-}
 .accordion2 {
     background-color: #eee;
     color: black;
@@ -189,4 +152,35 @@ hr{
     outline: none;
     font-size: 15px;
     transition: 0.2s;
+}
+/*FOOTER*/
+#footer{
+  background-color: #00316b;
+  border-radius: 5px;
+  text-align: center;
+  background: linear-gradient(to left , #fff 10%,#000066 90%);
+}
+#languages{
+  width: auto;
+  height: 50px;
+  margin-top: 45px;
+
+}
+.color1{
+  color: #fbfbfb;
+  text-decoration: underline;
+}
+#hbutton{
+  margin-left: 47%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 70px;
+  color:#ff0000;
+}
+#hbutton:hover{
+  font-size: 90px;
+  transition: 1s;
+}
+@media screen and ( max-width:767px){
+  .drop{display:none;}
 }
