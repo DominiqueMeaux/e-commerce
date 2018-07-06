@@ -118,7 +118,5 @@ $(function(){
     });
   });
   </script>
-=======
->>>>>>> 8bcc7bd35f2c936174703013aadcad9956abf4f6
 });
 //Fin script Amélie
